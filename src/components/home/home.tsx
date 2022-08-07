@@ -7,6 +7,7 @@ import { categories } from "../../data/categories";
 import { products } from "../../data/products";
 import { useEffect, useState } from "react";
 import { Footer } from "../footer/footer";
+import Head from "next/head";
 
 export const Home: React.FC = () => {
   const [topProducts, setTopProducts] = useState<any>([]);
@@ -19,6 +20,13 @@ export const Home: React.FC = () => {
   }, [products]);
   return (
     <>
+      <Head>
+        <title>Buy New & Pre-loved Electronics | Best Prices in Singapore | Reebelo</title>
+        <meta
+            name="description"
+            content="Buy New & Pre-loved Electronics at discounted prices"
+        />
+      </Head>
       <Header />
       <HS.Wrapper>
         <div className="container">

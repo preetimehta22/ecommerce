@@ -1,13 +1,11 @@
 import styled from "styled-components";
 import { AppBar } from "@mui/material";
-
 export const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
   width: 500px;
   justify-content: space-between;
 `;
-
 export const HeaderWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -25,15 +23,30 @@ export const HeaderWrapper = styled.div`
     padding: 0 24px;
     cursor: pointer;
   }
+  .cart-number {
+    position: relatisve;
+    cursor: pointer;
+    span {
+      position: absolute;
+      color: #fff;
+      background: red;
+      font-size: 10px;
+      height: 16px;
+      width: 16px;
+      text-align: center;
+      line-height: 16px;
+      margin-top: -4px;
+      margin-left: -8px;
+      border-radius: 50px;
+    }
+  }
 `;
-
 export const AppBarCustom = styled(AppBar)`
   padding: 12px 120px;
   background: #fff !important;
   border-bottom: 1px solid rgba(214, 214, 220, 0.7);
   box-shadow: none !important;
 `;
-
 export const SearchWrapper = styled.div`
   input {
     width: 300px;

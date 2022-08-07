@@ -6,6 +6,7 @@ import { products } from "../../../data/products";
 import * as PS from "./productSingle.styled";
 import { Header } from "../../header/header";
 import { Footer } from "../../footer/footer";
+import Head from "next/head";
 
 export const Product: React.FC = () => {
   const router = useRouter();
@@ -40,6 +41,13 @@ export const Product: React.FC = () => {
   };
   return (
     <>
+      <Head>
+        <title>{'Buy ' + product?.name?.replaceAll("-", " ") + ' | Best Prices in Singapore | Reebelo'}</title>
+        <meta
+            name="description"
+            content={'Buy ' + product?.name?.replaceAll("-", " ") + ' | Best Prices in Singapore | Reebelo'}
+        />
+      </Head>
       <Header />
       {product && (
         <div className="container">

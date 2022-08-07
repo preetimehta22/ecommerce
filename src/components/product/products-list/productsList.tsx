@@ -7,6 +7,7 @@ import { Filters } from "./filters/filters";
 import * as PS from "./productsList.styled";
 import { products } from "../../../data/products";
 import { Footer } from "../../footer/footer";
+import Head from "next/head";
 
 export const ProductsList: React.FC = () => {
   const router = useRouter();
@@ -48,6 +49,13 @@ export const ProductsList: React.FC = () => {
   }, [searchString, discount])
   return (
     <>
+      <Head>
+        <title>Buy New & Pre-loved Electronics | Best Prices in Singapore | Reebelo</title>
+        <meta
+            name="description"
+            content="Buy New & Pre-loved Electronics at discounted prices"
+        />
+      </Head>
       <Header searchString={searchString} />
       <PS.WrapperContainer className="container">
         <Grid container spacing={2}>
