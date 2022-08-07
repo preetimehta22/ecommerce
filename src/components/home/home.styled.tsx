@@ -69,20 +69,26 @@ export const InnerWrapper = styled.div`
     box-shadow: 1px 1px 4px 0px rgba(232, 232, 232, 1);
     padding: 12px;
     border-radius: 4px;
+    cursor: pointer;
+    background: #fff;
     p {
       margin: 8px 0px;
       color: #1f2323;
       font-size: 14px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     label {
       color: #6608ff;
       font-weight: 400;
       font-size: 24px;
     }
-    img {
+    .product-image {
       margin: -12px -12px 4px -12px;
       width: calc(100% + 24px);
       border-radius: 4px 4px 0px 0px;
+      height: 155px;
     }
   }
 `;
@@ -102,6 +108,7 @@ export const CategoryWrapper = styled.div`
     padding: 12px;
     border-radius: 4px;
     background: #fff;
+    cursor: pointer;
     h3 {
       font-weight: 500;
     }
@@ -112,11 +119,4 @@ export const CategoryWrapper = styled.div`
       height: 200px;
     }
   }
-`;
-
-export const Footer = styled.div`
-  background: #a306ec21;
-  display: flex;
-  justify-content: center;
-  padding: 40px;
 `;
