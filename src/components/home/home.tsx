@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Grid } from "@mui/material";
 import Link from "next/link";
+import Image from "next/image";
 import { Header } from "../header/header";
 import * as HS from "./home.styled";
 import { categories } from "../../data/categories";
@@ -38,7 +39,7 @@ export const Home: React.FC = () => {
               </Link>
             </Grid>
             <Grid item xs={5}>
-              <img src="./images/cover.png" />
+              <Image className="prop-image" src={"/images/cover.png"} width={660} height={600}/>
             </Grid>
           </Grid>
         </div>

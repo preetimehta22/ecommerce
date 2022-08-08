@@ -18,6 +18,10 @@ export const Wrapper = styled.div`
   img {
     width: 100%;
   }
+  .prop-image {
+    width: 100% !important;
+    height: auto !important;
+  }
 `;
 
 export const OuterWrapper = styled.div`
